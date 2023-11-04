@@ -19,3 +19,10 @@ swapper = None
 
 def run_swapper(list_of_tuples):
   return list(map(swapper, list_of_tuples))
+
+def swapper(Tuples):
+    return tuple(reversed(Tuples))
+  
+run_swapper(
+    [ (1, 1), ("foo", "bar"), (13, "cows"), (None, "Some") ]
+  )
