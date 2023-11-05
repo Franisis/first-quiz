@@ -34,7 +34,7 @@ public class Question6Test {
   public void canGetScottColaFor75Cents() throws Exception {
     VendingMachine vm = VendingMachineImpl.getInstance();
 
-    vm.insertQuarter();
+    vm.insertQuarter(); //ingresa dizque 25 centavos
     vm.insertQuarter();
     vm.insertQuarter();
 
@@ -43,7 +43,7 @@ public class Question6Test {
     assertTrue(drink.isFizzy());
     assertEquals(drink.getName(), "ScottCola");
   }
-
+  @Test
   public void machineResets() throws Exception {
     VendingMachine vm = VendingMachineImpl.getInstance();
 
